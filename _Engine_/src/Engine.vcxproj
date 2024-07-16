@@ -1,0 +1,476 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\Protos\AnimData.proto" />
+    <None Include="..\..\Protos\ArmatureData.proto" />
+    <None Include="..\..\Protos\BoundingObjectData.proto" />
+    <None Include="..\..\Protos\MeshData.proto" />
+    <None Include="..\..\Protos\ModelData.proto" />
+    <None Include="..\..\Protos\SpriteSheetData.proto" />
+    <None Include="..\..\Protos\TextureData.proto" />
+    <None Include="..\..\Protos\VBOData.proto" />
+    <None Include="..\Framework\__DO NOT MODIFY__" />
+    <None Include="Animation.cd" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Framework\Framework.h" />
+    <ClInclude Include="..\..\Framework\ProjectSettings.h" />
+    <ClInclude Include="..\..\Framework\ThreadFramework.h" />
+    <ClInclude Include="..\..\Manager\include\DLink.h" />
+    <ClInclude Include="..\..\Manager\include\DLinkIterator.h" />
+    <ClInclude Include="..\..\Math_3.0\include\Mat4.h" />
+    <ClInclude Include="..\..\Math_3.0\include\Quat.h" />
+    <ClInclude Include="..\..\Math_3.0\include\Vec3.h" />
+    <ClInclude Include="..\..\Math_3.0\include\Vec4.h" />
+    <ClInclude Include="..\..\PCSTree\include\PCSNode.h" />
+    <ClInclude Include="..\..\PCSTree\include\PCSTree.h" />
+    <ClInclude Include="..\..\Protos\AnimData.h" />
+    <ClInclude Include="..\..\Protos\AnimData.pb.h" />
+    <ClInclude Include="..\..\Protos\ArmatureData.h" />
+    <ClInclude Include="..\..\Protos\ArmatureData.pb.h" />
+    <ClInclude Include="..\..\Protos\BoundingObjectData.h" />
+    <ClInclude Include="..\..\Protos\BoundingObjectData.pb.h" />
+    <ClInclude Include="..\..\Protos\MeshData.h" />
+    <ClInclude Include="..\..\Protos\MeshData.pb.h" />
+    <ClInclude Include="..\..\Protos\ModelData.h" />
+    <ClInclude Include="..\..\Protos\ModelData.pb.h" />
+    <ClInclude Include="..\..\Protos\ModelTextureData.h" />
+    <ClInclude Include="..\..\Protos\ModelTextureData.pb.h" />
+    <ClInclude Include="..\..\Protos\SpriteSheetData.h" />
+    <ClInclude Include="..\..\Protos\SpriteSheetData.pb.h" />
+    <ClInclude Include="..\..\Protos\stb_image.h" />
+    <ClInclude Include="..\..\Protos\TextureData.h" />
+    <ClInclude Include="..\..\Protos\TextureData.pb.h" />
+    <ClInclude Include="..\..\Protos\VBOData.h" />
+    <ClInclude Include="..\..\Protos\VBOData.pb.h" />
+    <ClInclude Include="..\..\Time\include\AnimTime.h" />
+    <ClInclude Include="..\..\Time\include\AnimTimer.h" />
+    <ClInclude Include="..\include\stb_image.h" />
+    <ClInclude Include="..\Test\md5.h" />
+    <ClInclude Include="Anim.h" />
+    <ClInclude Include="AnimCMD.h" />
+    <ClInclude Include="AnimController.h" />
+    <ClInclude Include="AnimManager.h" />
+    <ClInclude Include="AnimMap.h" />
+    <ClInclude Include="AnimMap_Blend.h" />
+    <ClInclude Include="AnimMap_Null.h" />
+    <ClInclude Include="AnimNames.h" />
+    <ClInclude Include="Armature.h" />
+    <ClInclude Include="ArmatureManager.h" />
+    <ClInclude Include="Bone.h" />
+    <ClInclude Include="BoneMap.h" />
+    <ClInclude Include="BoundingNull.h" />
+    <ClInclude Include="BoundingObject.h" />
+    <ClInclude Include="BoundingObjectWrapper.h" />
+    <ClInclude Include="BoundingRect.h" />
+    <ClInclude Include="BoundingSphere.h" />
+    <ClInclude Include="Camera.h" />
+    <ClInclude Include="Camera2D.h" />
+    <ClInclude Include="Camera2DManager.h" />
+    <ClInclude Include="Camera3D.h" />
+    <ClInclude Include="Camera3DManager.h" />
+    <ClInclude Include="CameraManager.h" />
+    <ClInclude Include="CameraMesh.h" />
+    <ClInclude Include="CMD_CB_Done.h" />
+    <ClInclude Include="CMD_SetAnim.h" />
+    <ClInclude Include="CMD_SetAnimNoBlend.h" />
+    <ClInclude Include="CMD_SetIdleAsActive.h" />
+    <ClInclude Include="CMD_SetMessage.h" />
+    <ClInclude Include="CMD_TimedEvent_Anim.h" />
+    <ClInclude Include="ConeMesh.h" />
+    <ClInclude Include="ControlMap.h" />
+    <ClInclude Include="ControlMaps_Wrapper.h" />
+    <ClInclude Include="ControlMap_ChickenBot_AltOne.h" />
+    <ClInclude Include="ControlMap_ChickenBot_Default.h" />
+    <ClInclude Include="ControlMap_Grandma_Default.h" />
+    <ClInclude Include="ControlMap_Mouse_Default.h" />
+    <ClInclude Include="CubeMesh.h" />
+    <ClInclude Include="DebugObject.h" />
+    <ClInclude Include="Engine.h" />
+    <ClInclude Include="EngineCMDWrapper.h" />
+    <ClInclude Include="EngineNames.h" />
+    <ClInclude Include="Font.h" />
+    <ClInclude Include="FontManager.h" />
+    <ClInclude Include="FontMesh.h" />
+    <ClInclude Include="FrameBucket.h" />
+    <ClInclude Include="FrameManager.h" />
+    <ClInclude Include="Game.h" />
+    <ClInclude Include="GameObject.h" />
+    <ClInclude Include="GameObject2D.h" />
+    <ClInclude Include="GameObjectAnim.h" />
+    <ClInclude Include="GameObjectAnimSkin.h" />
+    <ClInclude Include="GameObjectFont.h" />
+    <ClInclude Include="GameObjectManager.h" />
+    <ClInclude Include="GameObjectUI.h" />
+    <ClInclude Include="GameObjectUIElement.h" />
+    <ClInclude Include="GameObjectUIRoot.h" />
+    <ClInclude Include="Glyph.h" />
+    <ClInclude Include="GraphicsObject.h" />
+    <ClInclude Include="GraphicsObjectManager.h" />
+    <ClInclude Include="GraphicsObjectNode.h" />
+    <ClInclude Include="GraphicsObjects_Wrapper.h" />
+    <ClInclude Include="GraphObj_BoundingRect.h" />
+    <ClInclude Include="GraphObj_Font.h" />
+    <ClInclude Include="GraphObj_SkinTextPointLight.h" />
+    <ClInclude Include="GraphObj_Sprite.h" />
+    <ClInclude Include="GraphObj_BoundingSphere.h" />
+    <ClInclude Include="GraphObj_ConstColor.h" />
+    <ClInclude Include="GraphObj_FlatTexture.h" />
+    <ClInclude Include="GraphObj_LightColor.h" />
+    <ClInclude Include="GraphObj_Null.h" />
+    <ClInclude Include="GraphObj_PhongColor.h" />
+    <ClInclude Include="GraphObj_TextureLight.h" />
+    <ClInclude Include="GraphObj_UI.h" />
+    <ClInclude Include="GraphObj_Wireframe.h" />
+    <ClInclude Include="Image.h" />
+    <ClInclude Include="ImageManager.h" />
+    <ClInclude Include="RectMesh.h" />
+    <ClInclude Include="Player.h" />
+    <ClInclude Include="IcosphereMesh.h" />
+    <ClInclude Include="InputManager.h" />
+    <ClInclude Include="Keyboard.h" />
+    <ClInclude Include="Manager_Wrapper.h" />
+    <ClInclude Include="Mesh.h" />
+    <ClInclude Include="MeshFileHdr.h" />
+    <ClInclude Include="MeshNode.h" />
+    <ClInclude Include="MeshNodeManager.h" />
+    <ClInclude Include="MeshWrapper.h" />
+    <ClInclude Include="AnimMixer.h" />
+    <ClInclude Include="Mouse.h" />
+    <ClInclude Include="NullMesh.h" />
+    <ClInclude Include="PlaneMesh.h" />
+    <ClInclude Include="PlayerController.h" />
+    <ClInclude Include="PlayerManager.h" />
+    <ClInclude Include="ProtoData_Wrapper.h" />
+    <ClInclude Include="ProtoManager.h" />
+    <ClInclude Include="ProtoMesh.h" />
+    <ClInclude Include="ProtoNode.h" />
+    <ClInclude Include="ProtoToOpenGL.h" />
+    <ClInclude Include="Rect.h" />
+    <ClInclude Include="RenderMaterial.h" />
+    <ClInclude Include="Scene.h" />
+    <ClInclude Include="Scene_Concert.h" />
+    <ClInclude Include="Scene_MS3.h" />
+    <ClInclude Include="ShaderManager.h" />
+    <ClInclude Include="ShaderObject.h" />
+    <ClInclude Include="SphereMesh.h" />
+    <ClInclude Include="SpriteMesh.h" />
+    <ClInclude Include="SSBO.h" />
+    <ClInclude Include="stb_image.h" />
+    <ClInclude Include="Texture.h" />
+    <ClInclude Include="TextureManager.h" />
+    <ClInclude Include="TextureMap.h" />
+    <ClInclude Include="TextureNode.h" />
+    <ClInclude Include="TGA.h" />
+    <ClInclude Include="TimerController.h" />
+    <ClInclude Include="TimerEvent.h" />
+    <ClInclude Include="TimerManager.h" />
+    <ClInclude Include="TorusMesh.h" />
+    <ClInclude Include="UIManager.h" />
+    <ClInclude Include="UINode.h" />
+    <ClInclude Include="UIStyle.h" />
+    <ClInclude Include="Verify.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Protos\AnimData.cpp" />
+    <ClCompile Include="..\..\Protos\AnimData.pb.cc" />
+    <ClCompile Include="..\..\Protos\ArmatureData.cpp" />
+    <ClCompile Include="..\..\Protos\ArmatureData.pb.cc" />
+    <ClCompile Include="..\..\Protos\BoundingObjectData.cpp" />
+    <ClCompile Include="..\..\Protos\BoundingObjectData.pb.cc" />
+    <ClCompile Include="..\..\Protos\MeshData.cpp" />
+    <ClCompile Include="..\..\Protos\MeshData.pb.cc" />
+    <ClCompile Include="..\..\Protos\ModelData.cpp" />
+    <ClCompile Include="..\..\Protos\ModelData.pb.cc" />
+    <ClCompile Include="..\..\Protos\ModelTextureData.cpp" />
+    <ClCompile Include="..\..\Protos\ModelTextureData.pb.cc" />
+    <ClCompile Include="..\..\Protos\SpriteSheetData.cpp" />
+    <ClCompile Include="..\..\Protos\SpriteSheetData.pb.cc" />
+    <ClCompile Include="..\..\Protos\TextureData.cpp" />
+    <ClCompile Include="..\..\Protos\TextureData.pb.cc" />
+    <ClCompile Include="..\..\Protos\VBOData.cpp" />
+    <ClCompile Include="..\..\Protos\VBOData.pb.cc" />
+    <ClCompile Include="..\Test\md5.cpp" />
+    <ClCompile Include="Anim.cpp" />
+    <ClCompile Include="AnimCMD.cpp" />
+    <ClCompile Include="AnimController.cpp" />
+    <ClCompile Include="AnimManager.cpp" />
+    <ClCompile Include="AnimMap.cpp" />
+    <ClCompile Include="AnimMap_Blend.cpp" />
+    <ClCompile Include="AnimMap_Null.cpp" />
+    <ClCompile Include="AnimMixer.cpp" />
+    <ClCompile Include="AnimNames.cpp" />
+    <ClCompile Include="Armature.cpp" />
+    <ClCompile Include="ArmatureManager.cpp" />
+    <ClCompile Include="BoneMap.cpp" />
+    <ClCompile Include="BoundingNull.cpp" />
+    <ClCompile Include="BoundingRect.cpp" />
+    <ClCompile Include="BoundingSphere.cpp" />
+    <ClCompile Include="Camera.cpp" />
+    <ClCompile Include="Camera2D.cpp" />
+    <ClCompile Include="Camera2DManager.cpp" />
+    <ClCompile Include="Camera3D.cpp" />
+    <ClCompile Include="Camera3DManager.cpp" />
+    <ClCompile Include="CameraManager.cpp" />
+    <ClCompile Include="CameraMesh.cpp" />
+    <ClCompile Include="CMD_CB_Done.cpp" />
+    <ClCompile Include="CMD_SetAnim.cpp" />
+    <ClCompile Include="CMD_SetAnimNoBlend.cpp" />
+    <ClCompile Include="CMD_SetIdleAsActive.cpp" />
+    <ClCompile Include="CMD_SetMessage.cpp" />
+    <ClCompile Include="CMD_TimedEvent_Anim.cpp" />
+    <ClCompile Include="ConeMesh.cpp" />
+    <ClCompile Include="ControlMap.cpp" />
+    <ClCompile Include="ControlMap_ChickenBot_AltOne.cpp" />
+    <ClCompile Include="ControlMap_ChickenBot_Default.cpp" />
+    <ClCompile Include="ControlMap_Grandma_Default.cpp" />
+    <ClCompile Include="ControlMap_Mouse_Default.cpp" />
+    <ClCompile Include="CubeMesh.cpp" />
+    <ClCompile Include="DebugObject.cpp" />
+    <ClCompile Include="Engine.cpp" />
+    <ClCompile Include="EngineNames.cpp" />
+    <ClCompile Include="Font.cpp" />
+    <ClCompile Include="FontManager.cpp" />
+    <ClCompile Include="FontMesh.cpp" />
+    <ClCompile Include="FrameBucket.cpp" />
+    <ClCompile Include="FrameManager.cpp" />
+    <ClCompile Include="Game.cpp" />
+    <ClCompile Include="GameObject.cpp" />
+    <ClCompile Include="GameObject2D.cpp" />
+    <ClCompile Include="GameObjectAnim.cpp" />
+    <ClCompile Include="GameObjectAnimSkin.cpp" />
+    <ClCompile Include="GameObjectFont.cpp" />
+    <ClCompile Include="GameObjectManager.cpp" />
+    <ClCompile Include="GameObjectUI.cpp" />
+    <ClCompile Include="GameObjectUIElement.cpp" />
+    <ClCompile Include="GameObjectUIRoot.cpp" />
+    <ClCompile Include="Glyph.cpp" />
+    <ClCompile Include="GraphicsObject.cpp" />
+    <ClCompile Include="GraphicsObjectManager.cpp" />
+    <ClCompile Include="GraphicsObjectNode.cpp" />
+    <ClCompile Include="GraphObj_BoundingRect.cpp" />
+    <ClCompile Include="GraphObj_Font.cpp" />
+    <ClCompile Include="GraphObj_SkinTextPointLight.cpp" />
+    <ClCompile Include="GraphObj_Sprite.cpp" />
+    <ClCompile Include="GraphObj_BoundingSphere.cpp" />
+    <ClCompile Include="GraphObj_ConstColor.cpp" />
+    <ClCompile Include="GraphObj_FlatTexture.cpp" />
+    <ClCompile Include="GraphObj_LightColor.cpp" />
+    <ClCompile Include="GraphObj_Null.cpp" />
+    <ClCompile Include="GraphObj_PhongColor.cpp" />
+    <ClCompile Include="GraphObj_TextureLight.cpp" />
+    <ClCompile Include="GraphObj_UI.cpp" />
+    <ClCompile Include="GraphObj_Wireframe.cpp" />
+    <ClCompile Include="IcosphereMesh.cpp" />
+    <ClCompile Include="Image.cpp" />
+    <ClCompile Include="ImageManager.cpp" />
+    <ClCompile Include="InputManager.cpp" />
+    <ClCompile Include="Keyboard.cpp" />
+    <ClCompile Include="RectMesh.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="Manager_Wrapper.cpp" />
+    <ClCompile Include="Mesh.cpp" />
+    <ClCompile Include="MeshFileHdr.cpp" />
+    <ClCompile Include="MeshNode.cpp" />
+    <ClCompile Include="MeshNodeManager.cpp" />
+    <ClCompile Include="Mouse.cpp" />
+    <ClCompile Include="NullMesh.cpp" />
+    <ClCompile Include="PlaneMesh.cpp" />
+    <ClCompile Include="Player.cpp" />
+    <ClCompile Include="PlayerController.cpp" />
+    <ClCompile Include="PlayerManager.cpp" />
+    <ClCompile Include="ProtoData_Wrapper.cpp" />
+    <ClCompile Include="ProtoManager.cpp" />
+    <ClCompile Include="ProtoMesh.cpp" />
+    <ClCompile Include="ProtoNode.cpp" />
+    <ClCompile Include="ProtoToOpenGL.cpp" />
+    <ClCompile Include="Rect.cpp" />
+    <ClCompile Include="Scene_Concert.cpp" />
+    <ClCompile Include="Scene_MS3.cpp" />
+    <ClCompile Include="ShaderManager.cpp" />
+    <ClCompile Include="ShaderObject.cpp" />
+    <ClCompile Include="SphereMesh.cpp" />
+    <ClCompile Include="SpriteMesh.cpp" />
+    <ClCompile Include="SSBO.cpp" />
+    <ClCompile Include="Texture.cpp" />
+    <ClCompile Include="TextureManager.cpp" />
+    <ClCompile Include="TextureMap.cpp" />
+    <ClCompile Include="TextureNode.cpp" />
+    <ClCompile Include="TimerController.cpp" />
+    <ClCompile Include="TimerEvent.cpp" />
+    <ClCompile Include="TimerManager.cpp" />
+    <ClCompile Include="TorusMesh.cpp" />
+    <ClCompile Include="UIManager.cpp" />
+    <ClCompile Include="UINode.cpp" />
+    <ClCompile Include="UIStyle.cpp" />
+    <ClCompile Include="Verify.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\CommandQueue\CommandQueue.vcxproj">
+      <Project>{dd0d75b9-a668-4b65-8dd5-1d9f038e1682}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\File\File.vcxproj">
+      <Project>{f98902ee-6f29-479b-9a05-b2ed999a06d6}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\GLFW\GLFW.vcxproj">
+      <Project>{1e4503c4-419b-498d-a9b4-8fdfa7e7733c}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Manager\Manager.vcxproj">
+      <Project>{84f74b68-74e3-4d84-b120-6ff4e3bb157f}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Math_3.0\Math.vcxproj">
+      <Project>{d999076e-f08b-48fc-b732-e43e13041a07}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\PCSTree\PCSTree.vcxproj">
+      <Project>{a6c4c8ae-826c-460c-9d86-3582777a9522}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\SB7\SB7.vcxproj">
+      <Project>{5dbb2b27-956a-4298-9602-e0b606955378}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Time\Time.vcxproj">
+      <Project>{886da24c-5e47-4fd4-a830-5e2fc46c1472}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="..\..\ProtoBuff\libs\debug\libprotobuf-lited.lib">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </Library>
+    <Library Include="..\..\ProtoBuff\libs\release\libprotobuf-lite.lib">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </Library>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{F378881E-1BCC-4A2A-8E59-85BCBC1B6039}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>MathEngineTest</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <TargetName>$(ProjectName)Debug</TargetName>
+    <GenerateManifest>false</GenerateManifest>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+    <EnableMicrosoftCodeAnalysis>false</EnableMicrosoftCodeAnalysis>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <TargetName>$(ProjectName)Release</TargetName>
+    <EnableMicrosoftCodeAnalysis>false</EnableMicrosoftCodeAnalysis>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>EnableAllWarnings</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_GLFW_WIN32;_GLFW_USE_CONFIG_H;BOOSTER;WINDOWS_TARGET_PLATFORM="$(TargetPlatformVersion)";SOLUTION_DIR=R"($(SolutionDir))";TOOLS_VERSION=R"($(VCToolsVersion))";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>
+      </SDLCheck>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <StringPooling>false</StringPooling>
+      <MinimalRebuild>false</MinimalRebuild>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <ProgramDataBaseFileName>$(OutDir)$(TargetName).pdb</ProgramDataBaseFileName>
+      <UseUnicodeForAssemblerListing>false</UseUnicodeForAssemblerListing>
+      <DisableSpecificWarnings>
+      </DisableSpecificWarnings>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\Protos;$(SolutionDir)..\CommandQueue\include;$(SolutionDir)..\Framework;$(SolutionDir)..\GLFW\include;$(SolutionDir)..\SB7\include;$(SolutionDir)..\Math_3.0\include;$(SolutionDir)..\File\include;$(SolutionDir)..\PCSTree\include;$(SolutionDir)..\Manager\include;$(SolutionDIr)..\Time\include;$(SolutionDir)..\ProtoBuff;$(SolutionDir)..\Shaders;$(SolutionDir)Test;$(ProjectDir);$(SolutionDir)include;$(SolutionDir)..\_Converter_Anim_\Sandbox</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>Framework.h</ForcedIncludeFiles>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <BrowseInformation>true</BrowseInformation>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>DebugFull</GenerateDebugInformation>
+      <AdditionalDependencies>opengl32.lib;glu32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <IgnoreSpecificDefaultLibraries>
+      </IgnoreSpecificDefaultLibraries>
+      <ShowProgress>NotSet</ShowProgress>
+      <IgnoreAllDefaultLibraries>
+      </IgnoreAllDefaultLibraries>
+    </Link>
+    <PreBuildEvent>
+      <Command>
+      </Command>
+    </PreBuildEvent>
+    <Bscmake>
+      <PreserveSbr>true</PreserveSbr>
+    </Bscmake>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>EnableAllWarnings</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;_GLFW_WIN32;_GLFW_USE_CONFIG_H;BOOSTER;WINDOWS_TARGET_PLATFORM="$(TargetPlatformVersion)";SOLUTION_DIR=R"($(SolutionDir))";TOOLS_VERSION=R"($(VCToolsVersion))";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>
+      </SDLCheck>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <StringPooling>false</StringPooling>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <ProgramDataBaseFileName>$(OutDir)$(TargetName).pdb</ProgramDataBaseFileName>
+      <DisableSpecificWarnings>
+      </DisableSpecificWarnings>
+      <AdditionalIncludeDirectories>$(SolutionDir)Framework;$(SolutionDir)..\GLFW\include;$(SolutionDir)..\SB7\include;$(SolutionDir)..\Math_3.0\include;$(SolutionDir)..\File\include;$(SolutionDir)..\PCSTree\include;$(SolutionDir)..\Manager\include;$(SolutionDIr)..\Time\include;$(SolutionDir)..\ProtoBuff;$(SolutionDir)..\Shaders;$(SolutionDir)Test;$(ProjectDir);$(SolutionDir)..\_Converter_Anim_\Sandbox</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>Framework.h</ForcedIncludeFiles>
+      <ExceptionHandling>Sync</ExceptionHandling>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>opengl32.lib;glu32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PreBuildEvent>
+      <Command>
+      </Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

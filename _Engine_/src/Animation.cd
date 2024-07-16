@@ -1,0 +1,247 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Uncertain::AnimController">
+    <Position X="14.5" Y="3.25" Width="1.5" />
+    <Members>
+      <Method Name="~AnimController" Hidden="true" />
+      <Method Name="Add" Hidden="true" />
+      <Method Name="AdjustDelta" Hidden="true" />
+      <Method Name="AnimController" Hidden="true" />
+      <Method Name="BlendFromActiveAnim" Hidden="true" />
+      <Method Name="Compare" Hidden="true" />
+      <Method Name="CreateNode" Hidden="true" />
+      <Method Name="Find" Hidden="true" />
+      <Method Name="GetBone" Hidden="true" />
+      <Method Name="GetBoneIndex" Hidden="true" />
+      <Method Name="GetBoneMap" Hidden="true" />
+      <Method Name="GetIdle" Hidden="true" />
+      <Method Name="GetName" Hidden="true" />
+      <Method Name="GetNumBones" Hidden="true" />
+      <Method Name="operator=" Hidden="true" />
+      <Field Name="poNullAnim" Hidden="true" />
+      <Method Name="Print" Hidden="true" />
+      <Method Name="Remove" Hidden="true" />
+      <Method Name="Reverse" Hidden="true" />
+      <Method Name="Set" Hidden="true" />
+      <Method Name="SetActive" Hidden="true" />
+      <Method Name="SetActiveNoBlend" Hidden="true" />
+      <Method Name="SetIdle" Hidden="true" />
+      <Method Name="SetIdleAsActive" Hidden="true" />
+      <Method Name="Wash" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>QAYFIAAAAACQBAGABEOQBAAAAhEIQAgAAABiBIAEBEA=</HashCode>
+      <FileName>AnimController.h</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="pActiveAnim" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Uncertain::GameObjectAnim">
+    <Position X="11.5" Y="3.5" Width="1.5" />
+    <Members>
+      <Method Name="~GameObjectAnim" Hidden="true" />
+      <Method Name="GameObjectAnim" Hidden="true" />
+      <Method Name="operator=" Hidden="true" />
+      <Method Name="SetIndex" Hidden="true" />
+      <Method Name="Update" Hidden="true" />
+    </Members>
+    <AssociationLine Name="pAnimController" Type="Uncertain::AnimController">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="1.425" Y="0.11" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAQEAAAAAAAAAAAAQAEAAAAAAAAQAAAAAACgAAAAAAA=</HashCode>
+      <FileName>GameObjectAnim.h</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="pAnimController" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Uncertain::PlayerController">
+    <Position X="11.5" Y="6" Width="1.75" />
+    <Members>
+      <Method Name="~PlayerController" Hidden="true" />
+      <Method Name="AdjustDelta" Hidden="true" />
+      <Method Name="GetAnimController" Hidden="true" />
+      <Method Name="GetGameObject" Hidden="true" />
+      <Method Name="operator=" Hidden="true" />
+      <Method Name="PlayerController" Hidden="true" />
+      <Method Name="Reverse" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAQAAAAAAAAAAIACAEAgAAAgAAAAwiABAAAAA=</HashCode>
+      <FileName>PlayerController.h</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="pGameObject" />
+      <Field Name="pAnim" />
+      <Field Name="poMap" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Uncertain::Player">
+    <Position X="8.75" Y="5.75" Width="1.5" />
+    <Members>
+      <Method Name="~Player" Hidden="true" />
+      <Method Name="Compare" Hidden="true" />
+      <Method Name="GetName" Hidden="true" />
+      <Field Name="Name" Hidden="true" />
+      <Method Name="operator=" Hidden="true" />
+      <Method Name="Player" Hidden="true" />
+      <Method Name="Print" Hidden="true" />
+      <Method Name="Set" Hidden="true" />
+      <Method Name="SetName" Hidden="true" />
+      <Method Name="Wash" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAIAAAAAAAABAAAAAAAAAQAAAAAQAAAAABgQRAEBBA=</HashCode>
+      <FileName>Player.h</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="pController" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Uncertain::PlayerManager" Collapsed="true">
+    <Position X="7.5" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAABAIAAAAAAAABAEAJAAABABIAEAAAAAgABBAAgA=</HashCode>
+      <FileName>PlayerManager.h</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="pCompNode" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Uncertain::ControlMap">
+    <Position X="14.5" Y="7.25" Width="1.5" />
+    <Members>
+      <Method Name="~ControlMap" Hidden="true" />
+      <Method Name="ControlMap" Hidden="true" />
+      <Method Name="operator=" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAgAAAAAAAAAAgAAIAAAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>ControlMap.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Uncertain::ControlMap_ChickenBot">
+    <Position X="14.5" Y="9" Width="1.5" />
+    <Members>
+      <Method Name="~ControlMap_ChickenBot" Hidden="true" />
+      <Method Name="ControlMap_ChickenBot" Hidden="true" />
+      <Method Name="operator=" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAQAAAAAAAAAAAAAAAgABAAAAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>ControlMap_ChickenBot.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Uncertain::AnimMap">
+    <Position X="17.25" Y="3.25" Width="1.5" />
+    <Members>
+      <Method Name="~AnimMap" Hidden="true" />
+      <Method Name="AnimMap" Hidden="true" />
+      <Method Name="Compare" Hidden="true" />
+      <Method Name="GetBone" Hidden="true" />
+      <Method Name="GetBoneIndex" Hidden="true" />
+      <Method Name="GetBoneMap" Hidden="true" />
+      <Method Name="GetFirstBone" Hidden="true" />
+      <Method Name="GetName" Hidden="true" />
+      <Method Name="GetNumBones" Hidden="true" />
+      <Method Name="operator=" Hidden="true" />
+      <Method Name="Print" Hidden="true" />
+      <Method Name="Set" Hidden="true" />
+      <Method Name="SetLoop" Hidden="true" />
+      <Method Name="Wash" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAQJAAAIgAAABCGAAAAAAAQAgAEAQAEAAABgAAAEBAA=</HashCode>
+      <FileName>AnimMap.h</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="poTimerController" />
+      <Field Name="poAnim" />
+      <Field Name="pController" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Uncertain::TimerController" Collapsed="true">
+    <Position X="20.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQGAIABAEQAAAAAQAAAQAAAAAAABAAAAAAkAAAAAAA=</HashCode>
+      <FileName>TimerController.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Uncertain::Anim">
+    <Position X="20.5" Y="4.25" Width="1.5" />
+    <Members>
+      <Method Name="~Anim" Hidden="true" />
+      <Method Name="Anim" Hidden="true" />
+      <Field Name="BLEND_FRAMES" Hidden="true" />
+      <Method Name="FindMaxTime" Hidden="true" />
+      <Method Name="GetBone" Hidden="true" />
+      <Method Name="GetBoneIndex" Hidden="true" />
+      <Method Name="GetBoneMap" Hidden="true" />
+      <Method Name="GetCallback" Hidden="true" />
+      <Method Name="GetFirstBone" Hidden="true" />
+      <Method Name="GetName" Hidden="true" />
+      <Method Name="GetNumBones" Hidden="true" />
+      <Field Name="NumBones" Hidden="true" />
+      <Field Name="NumFrames" Hidden="true" />
+      <Method Name="operator=" Hidden="true" />
+      <Field Name="pName" Hidden="true" />
+      <Method Name="privAnimate" Hidden="true" />
+      <Method Name="SetBoneMap" Hidden="true" />
+      <Method Name="SetCallback" Hidden="true" />
+      <Method Name="SetFrames" Hidden="true" />
+      <Field Name="TotalTime" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Enum Name="Uncertain::Anim::ANIM_SPECIAL" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Anim.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Struct Name="Uncertain::Anim::Frame">
+        <TypeIdentifier>
+          <NewMemberFileName>Anim.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Struct>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>CAABAAAAwUgAAAHABAAAABQAAAGAEAEAAAgggAEARAA=</HashCode>
+      <FileName>Anim.h</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="poBoneResult" />
+      <Field Name="poMap" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="BoneMap">
+    <Position X="23.5" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAIBAAAABgAAAAAAAAQAQAAAAAkAAAAAAA=</HashCode>
+      <FileName>BoneMap.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Uncertain::AnimManager" Collapsed="true">
+    <Position X="13.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAcAAAAAIABAAAAQBAVABAAABARIAEAABAAgAABIAgA=</HashCode>
+      <FileName>AnimManager.h</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="pCompNode" />
+    </ShowAsAssociation>
+  </Class>
+  <Struct Name="Uncertain::Bone" Collapsed="true">
+    <Position X="23.5" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAACEAQA=</HashCode>
+      <FileName>Bone.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

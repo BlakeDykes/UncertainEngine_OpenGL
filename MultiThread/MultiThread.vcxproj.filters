@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="include">
+      <UniqueIdentifier>{62756e66-8839-482b-8326-513973ed48aa}</UniqueIdentifier>
+      <Extensions>h</Extensions>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{2b319c65-0584-4b21-b5d0-304499424029}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="_Diagrams">
+      <UniqueIdentifier>{ad6aae5e-3c47-4964-8e21-0ff7fac475ce}</UniqueIdentifier>
+      <Extensions>cd</Extensions>
+    </Filter>
+    <Filter Include="_Framework">
+      <UniqueIdentifier>{f9ef4c49-2541-4d1f-81b1-acd84457891d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\Handle">
+      <UniqueIdentifier>{93f60cd3-a52a-45e4-89bc-a5cbe686e7ed}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Framework\Framework.h">
+      <Filter>_Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Framework\ProjectSettings.h">
+      <Filter>_Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Framework\ThreadFramework.h">
+      <Filter>_Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Handle.h">
+      <Filter>include\Handle</Filter>
+    </ClInclude>
+    <ClInclude Include="include\HandleManager.h">
+      <Filter>include\Handle</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\Handle.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\HandleManager.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
